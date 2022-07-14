@@ -1,1 +1,10 @@
 @import 'reset.css';
+
+.posts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.post img {
+  max-height: 300px;
+}

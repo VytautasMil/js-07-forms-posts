@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS project</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/posts.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>New project</h1>
+
+      <form id="createPost" class="flex flex-col card align-start">
+        <input type="text" placeholder="Title" id="title" />
+        <input type="url" placeholder="Image" id="image" />
+        <input type="date" placeholder="Date" id="date" />
+        <select name="author" id="author">
+          <option selected disabled value="">Select author</option>
+          <option value="1">Jame Bond</option>
+          <option value="2">Serbentautas</option>
+          <option value="3">Severijus Klaida</option>
+        </select>
+        <textarea name="body" id="body" placeholder="Open your mind"></textarea>
+        <button type="submit">Create</button>
+      </form>
+
+      <section id="posts">
+        <h2>Read Our posts</h2>
+        <div class="posts-container"></div>
+      </section>
+    </div>
+  </body>
+</html>
