@@ -17,7 +17,7 @@ createFormEl.addEventListener('submit', function (event) {
     title: titleEl.value,
     image: imageEl.value,
     date: dateEl.value,
-    author: authorEl.value,
+    author: authorEl.querySelector(':checked').textContent,
     body: bodyEl.value,
   };
   console.log('newPostObj ===', newPostObj);
@@ -37,3 +37,5 @@ function makePostToHtml(post, dest) {
   `;
   dest.append(artEl);
 }
+
+const postInnerEls = [['img', '', [['src', '']]]];
